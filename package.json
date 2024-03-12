@@ -23,6 +23,7 @@
 		"react-a11y": "^1.1.0",
 		"react-dom": "^18.2.0",
 		"react-hook-form": "^7.51.0",
+		"react-scroll": "^1.9.0",
 		"react-toastify": "^10.0.4"
 	},
 	"devDependencies": {
