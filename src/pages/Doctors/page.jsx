@@ -14,16 +14,16 @@ export default function Doctors() {
       <div className={clsx(`${styles['start']} w-full h-[52px] opacity-60 pt-3 text-white bg-[#2CB2BB]`)}>
         <div className="container">Врачи</div>
       </div>
-      <div className={`${styles.container} container pt-20`}>
-        <h1 className="text-center w-full text-[40px] leading-[48px] font-black mb-10">Врачи</h1>
+      <div className={`${styles.container} container pt-20 440:pt-10`}>
+        <h1 className="text-center w-full text-[40px] leading-[48px] font-black mb-10 440:mb-5">Врачи</h1>
         <DoctorSpecTabs />
         <hr className={styles.hr} />
         <DoctorSearch />
         <DoctorResult />
 
-        <div className="flex items-start flex-col gap-10 mt-16">
+        <div className="flex items-start flex-col gap-10 mt-16 440:mt-10">
           <div className={styles.bottom}>
-            <h4>Ортодонты</h4>
+            <h4 className="">Ортодонты</h4>
             <p>
               Специализируются на коррекции расположения зубов и прикуса. Современные капы и брекеты в руках опытного
               специалиста позволяют создать идеально ровную и красивую улыбку в любом возрасте. Вопреки

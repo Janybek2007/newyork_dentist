@@ -59,7 +59,6 @@ const Teeth = () => {
 		width > 841 && (
 			<div className='container'>
 				<div className='relative my-11'>
-					{/* Слайдер */}
 					<Slider {...sliderSettings} ref={sliderRef}>
 						{slidesContent.map((content, index) => (
 							<div
