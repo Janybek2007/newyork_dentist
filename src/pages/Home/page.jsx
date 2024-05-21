@@ -11,14 +11,11 @@ import Social from '../../widgets/common/Social'
 import Teeth from '../../widgets/common/Teeth'
 import Form1Home from '../../widgets/common/form1Home'
 import { FaArrowRight } from 'react-icons/fa'
-import { useMoreDetail } from '../../entity/more_detail/store'
 
 export default function Home() {
-  const { setModalContent } = useMoreDetail()
   useEffect(() => {
     document.title = 'Newyork dentist'
   }, [])
-
   return (
     <>
       <Teeth />
@@ -38,9 +35,7 @@ export default function Home() {
             Только честные отзывы
           </h1>
           <p className="none" data-aos="fade-up" data-aos-duration={2 * 300}>
-            <button className="flex gap-3 items-center">
-              Все отзывы <FaArrowRight />
-            </button>
+            Все отзывы <FaArrowRight />
           </p>
         </div>
       </Reviews>
