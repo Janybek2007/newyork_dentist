@@ -11,10 +11,8 @@ import Social from '../../widgets/common/Social'
 import Teeth from '../../widgets/common/Teeth'
 import Form1Home from '../../widgets/common/form1Home'
 import { FaArrowRight } from 'react-icons/fa'
-import { useMoreDetail } from '../../entity/more_detail/store'
 
 export default function Home() {
-  const { setModalContent } = useMoreDetail()
   useEffect(() => {
     document.title = 'Newyork dentist'
   }, [])
