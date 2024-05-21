@@ -16,7 +16,6 @@ export default function Home() {
   useEffect(() => {
     document.title = 'Newyork dentist'
   }, [])
-
   return (
     <>
       <Teeth />
@@ -36,9 +35,7 @@ export default function Home() {
             Только честные отзывы
           </h1>
           <p className="none" data-aos="fade-up" data-aos-duration={2 * 300}>
-            <button className="flex gap-3 items-center">
-              Все отзывы <FaArrowRight />
-            </button>
+            Все отзывы <FaArrowRight />
           </p>
         </div>
       </Reviews>

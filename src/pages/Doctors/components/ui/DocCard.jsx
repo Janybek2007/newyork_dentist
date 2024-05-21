@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import { useWindowSize } from '../../../../entity/hooks/useWindowSize'
 
 const variants = {
   hidden: {
@@ -10,6 +11,7 @@ const variants = {
   visible: { opacity: 1, translateX: 0 },
 }
 export default function DocCard({ idx, item, styles }) {
+  const { width } = useWindowSize()
   return (
     <motion.div
       variants={variants}
@@ -45,14 +47,16 @@ export default function DocCard({ idx, item, styles }) {
               {item.firstName} {item.lastName}
             </h4>
           </Link>
-          <ul>
-            {item?.spec?.map((item, idx) => (
-              <li key={idx}>
-                {item.title}
-                {idx !== (Array.isArray(item?.spec) && item.spec?.length) ? ', ' : ''}
-              </li>
-            ))}
-          </ul>
+          {width > 400 && (
+            <ul>
+              {item?.spec?.map((item, idx) => (
+                <li key={idx}>
+                  {item.title}
+                  {idx !== (Array.isArray(item?.spec) && item.spec?.length) ? ', ' : ''}
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
       </div>
 

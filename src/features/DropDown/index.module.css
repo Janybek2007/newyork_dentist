@@ -1,88 +1,88 @@
 .dropdownContainer {
-	position: relative;
-	display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .dropdownButton {
-	padding: 6px 10px;
-	border: none;
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 10px;
-	font-size: 14px;
-	line-height: 18px;
-	position: relative;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 18px;
+  position: relative;
 
-	& svg {
-		font-size: 12px;
-	}
+  & svg {
+    font-size: 12px;
+  }
 }
 
 .dropdownContent {
-	position: absolute;
-	background-color: white;
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
-	min-width: 280px;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+  min-width: 280px;
 
-	transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
-	opacity: 0;
-	pointer-events: none;
-	visibility: none;
-	z-index: -90;
+  opacity: 0;
+  pointer-events: none;
+  visibility: none;
+  z-index: -90;
 
-	border-radius: 4px;
-	width: 100%;
+  border-radius: 4px;
+  width: 100%;
 }
 
 .dropdownContent a,
 .dropdownContent button {
-	color: black;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
-	font-size: 14px;
-	width: 100% !important;
-	text-align: left;
-	font-weight: 500;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  width: 100% !important;
+  text-align: left;
+  font-weight: 500;
 }
 .dropdownContent {
-	color: black;
-	text-decoration: none;
-	display: block;
-	font-size: 14px;
-	width: 100% !important;
-	text-align: left;
-	font-weight: 500;
+  color: black;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  width: 100% !important;
+  text-align: left;
+  font-weight: 500;
 }
 
 .dropdownContent a:hover,
 .dropdownContent button:hover {
-	background-color: #dadada;
+  background-color: #dadada;
 }
 
 .show {
-	opacity: 1;
-	pointer-events: all;
-	visibility: visible;
-	z-index: 999;
-	transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+  z-index: 999;
+  transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 @media (min-width: 940px) and (max-width: 1100px) {
-	.dropdownContent {
-		min-width: 260px;
-	}
-	.dropdownContent a,
-	.dropdownContent button {
-		color: black;
-		padding: 10px 14px;
-		text-decoration: none;
-		display: block;
-	}
-	.dropdownButton {
-		font-size: 13px;
-	}
+  .dropdownContent {
+    min-width: 260px;
+  }
+  .dropdownContent a,
+  .dropdownContent button {
+    color: black;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdownButton {
+    font-size: 13px;
+  }
 }

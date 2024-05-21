@@ -98,7 +98,6 @@ const Teeth = () => {
               </div>
             ))}
           </Slider>
-
           <div className="flex justify-between px-11 " style={{ textAlign: 'center', marginTop: '20px' }}>
             {slidesContent.map((content, index) => (
               <span
@@ -119,7 +118,6 @@ const Teeth = () => {
               </span>
             ))}
           </div>
-
           <div className="flex gap-2 absolute right-5 bottom-16" style={{ textAlign: 'center', marginTop: '20px' }}>
             <button onClick={handlePrevSlide}>
               <div className="btn-container bg-gray-400 rounded-full">
@@ -199,4 +197,3 @@ const Teeth = () => {
 
 export default Teeth
 
-/////////////////////////////////////////AZIRET 1
